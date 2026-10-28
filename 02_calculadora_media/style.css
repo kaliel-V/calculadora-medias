@@ -1,0 +1,120 @@
+
+/* ===== Página ===== */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eef2f7;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2933;
+}
+
+.cartao {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin: 0 0 6px;
+    font-size: 22px;
+}
+
+.subtitulo {
+    margin: 0 0 18px;
+    color: #616e7c;
+    font-size: 14px;
+}
+
+/* ===== Campos ===== */
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 14px;
+    border: 1px solid #cbd2d9;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.notas {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #3b5bdb;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #364fc7;
+}
+
+/* ===== Resultado ===== */
+.resultado {
+    margin-top: 16px;
+    padding: 14px;
+    border-radius: 8px;
+    border-left: 6px solid;
+    font-size: 15px;
+}
+
+/* Esta classe some com o resultado enquanto não há cálculo */
+.escondido {
+    display: none;
+}
+
+/* Uma classe para cada situação. O JavaScript escolhe qual usar. */
+.aprovado {
+    background: #ebfbee;
+    border-color: #2f9e44;
+    color: #2b8a3e;
+}
+
+.recuperacao {
+    background: #fff9db;
+    border-color: #f59f00;
+    color: #a35f00;
+}
+
+.reprovado {
+    background: #fff5f5;
+    border-color: #e03131;
+    color: #c92a2a;
+}
+
+.erro {
+    background: #f1f3f5;
+    border-color: #868e96;
+    color: #495057;
+}
+
+.regras {
+    margin: 16px 0 0;
+    font-size: 12px;
+    color: #7b8794;
+    text-align: center;
+}
